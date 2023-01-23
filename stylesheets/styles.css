@@ -1,8 +1,17 @@
-
-
-#about-us, #members {
-    padding-top: 7em;
+.navbar {
+    background-color:rgba(255, 255, 255, 0.4);
+    padding: 0 !important;
 }
+
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.nav-logo {
+    height: 5rem;
+    width: 5rem;
+}
+
 
 .background-image {
     background: url('/assets/Earth.png') no-repeat center center fixed;
@@ -24,15 +33,57 @@
     background-color:rgba(255, 255, 255, 0.4);
 }
 
-.CRFC-logo {
+.centered {
     position: absolute;
+    max-width: 45%;
+    max-height: 45%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    offset-position: top;
+    overflow: visible;
 }
 
+.CRFC-logo {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: -50%;
+    margin-left: -50%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #353535;
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-auto-rows: 240px;
+}
+
+.grid-item-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+
+    
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 .hidden {
