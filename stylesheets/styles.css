@@ -17,11 +17,10 @@
     width: 5rem;
 }
 
-
 .background-image {
-    background: url('/assets/Earth.png') no-repeat center center fixed;
+    background: url('../assets/Earth.png') no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
+    width: 100%;
     overflow: hidden;
     position: sticky;
     display: flex;
