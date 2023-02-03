@@ -50,7 +50,6 @@ table {
 	border-spacing: 0;
 }
 
-
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
