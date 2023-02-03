@@ -18,3 +18,15 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
     e.target.elements.email.value = '';
     e.target.elements.message.value = '';
   });
+
+const gridItems = document.querySelectorAll('.grid-item');
+
+gridItems.forEach((item) => {
+    const img = new Image();
+    img.src = item.style.backgroundImage.slice(4, -1).replace(/\"/g, "");
+
+    img.onload = function(){
+        const aspectRatio = img.naturalWidth / img.naturalHeight;
+        item.style.paddingBottom = 100/ aspectRatio + "%";
+    }
+});
