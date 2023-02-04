@@ -57,8 +57,13 @@ body {
     margin-left: -50%;
 }
 
+.container {
+    max-width: 750px !important;  
+}
+
 .grid-container {
     flex-wrap: wrap;
+    max-width: 750px;
 }
 
 .grid-item {
