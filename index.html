@@ -5,160 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheets/styles.css">
-    <link rel="stylesheet" href="./stylesheets/reset.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <title>Cardano RealFi Consortium</title>
 </head>
 <body>
-    <section>
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a href="#">
-                    <img 
-                        src="./assets/CRFC-logo.png" alt="CRFC-logo-transparent-bg"
-                        class="nav-logo"    
-                    >
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto text-end mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about-us">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#members">Members</a>
-                  </li>
+    <header>
+        <div class="container nav__container">
+            <button class="nav-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <a href="#">
+                <img 
+                    src="./assets/CRFC-logo.png" alt="CRFC-logo-transparent-bg"
+                    class="logo" 
+                >
+            </a>
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Members</a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-    </section>
+            </nav>
+        </div>
+    </header>
 
     <!-- Home -->
 
-    <section id="home" class="background-image vh-100 d-flex flex-column justify-content-center align-items-center">
-        <div class="overlay"></div>
-        <div class="centered">
-            <img src="./assets/CRFC-logo.png" alt="CRFC-logo" class="CRFC-logo">
+    <section class="hero">
+        <div class="container row">
+            <div class="col col--hero">
+                    <img src="./assets/CRFC-logo.png" alt="CRFC-logo" class="logo--hero">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Us -->
 
-    <section id="about-us" class="m-5 d-flex flex-column align-items-end">
-        <div class="container p-1">
-            <h2 class="display-2 fw-bold text-center">About Us</h2>
-        </div>
-        <div class="container p-1 my-5">
-            <h3 class="display-3">
-                Welcome!
-            </h3>
-            <p>We are an independent collective of RealFi projects that create value and trust by connecting real world assets and processes to transactions and tokens on the Cardano blockchain.</p>
-            <p>The CRFC is an open and permissionless organization that models and advances decentralization principles.</p>
-            <p>We hold bi-weekly planning meetings and have organised the following working groups:</p>
-            <ol>
-                <li>Identity & Trust</li>
-                <li>Fiat Conversion</li>
-                <li>Document Verification</li>
-                <li>Governance & Membership</li>
-                <li>Outreach & Marketing</li>
-            </ol>
+    <section class="about" id="about">
+        <div class="container row">
+            <div class="col">
+                <h2 class="about__heading">About Us</h2>
+                <p class="about__text">We are an independent collective of RealFi projects that create value and trust by connecting real world assets and processes to transactions and tokens on the Cardano blockchain.</p>
+                <p class="about__text">The CRFC is an open and permissionless organization that models and advances decentralization principles.</p>
+                <p class="about__text">We hold bi-weekly planning meetings and have organised the following working groups:</p>
+                <ul class="about__list">
+                    <li class="about__item">Identity & Trust</li>
+                    <li class="about__item">Fiat Conversion</li>
+                    <li class="about__item">Document Verification</li>
+                    <li class="about__item">Governance & Membership</li>
+                    <li class="about__item">Outreach & Marketing</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <!-- Members -->
-
-    <section id="members" class="mx-5">
-        <div class="container pb-5">
-            <h2 class="display-2 fw-bold text-center">Members</h2>
-        </div>
-        <div class="grid-container container-fluid d-flex justify-content-center">
-            <section class="row">
-                <div 
-                class="col-12 col-sm-6 col-md-4 grid-item"
-                onclick='window.location.href="https://aid.technology"'
-                >
-                <img class="img-fluid p-4" src="./assets/aid_tech-logo.png" alt="">
-            </div> 
-            <div 
-                    class="col-12 col-sm-6 col-md-4 grid-item"
-                    onclick='window.location.href="https://cardashift.com/"'    
-                    >
-                    <img class="img-fluid p-4" src="./assets/cardashift-logo.png" alt="">
-                </div> 
-                <div 
-                class="col-12 col-sm-6 col-md-4 grid-item"
-                    onclick='window.location.href="https://charli3.io/"'    
-                    >
-                    <img class="img-fluid p-4" src="./assets/charlie3-logo.png" alt="">
+    <section class="members">
+        <div class="container">
+            <h2 class="members__heading">Members</h2>
+            <div class="members__section">
+                <div class="member__item">
+                    <img class="member__img" src="./assets/aid_tech-logo.png" alt="">
                 </div>
-                <div class="w-100"></div> 
-                <div 
-                class="col-12 col-sm-6 col-md-4 grid-item"
-                onclick='window.location.href="https://iamx.id/"'    
-                >
-                <img class="img-fluid p-4" src="./assets/iamx.id-logo.png" alt="">
-            </div> 
-            <div 
-            class="col-12 col-sm-6 col-md-4 grid-item"
-            onclick='window.location.href="https://impactscope.com/"'    
-            >
-            <img class="img-fluid p-4" src="./assets/impact-scope-logo.png" alt="">
-        </div> 
-        <div 
-        class="col-12 col-sm-6 col-md-4 grid-item"
-        onclick='window.location.href="https://www.landano.io/"'    
-        >
-        <img class="img-fluid p-4" src="./assets/landano-logo.png" alt="">
-    </div> 
-    <div class="w-100"></div>
-    <div 
-    class="col-12 col-sm-6 col-md-4 grid-item"
-    onclick='window.location.href="https://livinggreensurbanfarm.com/"'    
-    >
-    <img class="img-fluid p-4" src="./assets/lguf-logo.png" alt="">
-    </div> 
-    <div 
-    class="col-12 col-sm-6 col-md-4 grid-item"
-    onclick='window.location.href="https://newm.io"'    
-    >
-    <img class="img-fluid p-4" src="./assets/newm-logo.png" alt="">
-    </div> 
-    <div 
-    class="col-12 col-sm-6 col-md-4 grid-item"
-    onclick='window.location.href="https://newm.io"'    
-    >
-    <img class="img-fluid p-4" src="./assets/Commonlands-Logo-Large-Transparent.png" alt="">
-    </div> 
+                <div class="member__item">
+                    <img class="member__img" src="./assets/cardashift-logo.png" alt="">
+                </div>
+                <div class="member__item">
+                    <img class="member__img" src="./assets/charlie3-logo.png" alt="">
+                </div>
+                <div class="member__item">
+                    <img class="member__img--iamx" src="./assets/iamx.id-logo.png" alt="">
+                </div>
+                <div class="member__item">
+                    <img class="member__img" src="./assets/impact-scope-logo.png" alt="">
+                </div>
+                <div class="member__item">
+                    <img class="member__img" src="./assets/landano-logo.png" alt="">
+                </div>
+                <div class="member__item">
+                    <img class="member__img" src="./assets/lguf-logo.png" alt="">
+                </div>
+                <div class="member__item">
+                    <img class="member__img" src="./assets/newm-logo.png" alt="">
+                </div>
+                <div class="member__item">
+                    <img class="member__img" src="./assets/Commonlands-Logo-Large-Transparent.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
-    </div>
-</section>
 
-<!-- Resources -->
 
-<section>
-    <div class="container p-5">
-        <h2 class="display-2 fw-bold text-center">Resources</h2>
-        <div class="d-flex flex-column align-items-center justify-content-center embed-responsive embed-responsive-4by3 my-5">
-            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/hVhZgSYpUQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="d-flex justify-content-around resource-links my-5">
-            <a role="button" class="btn btn-primary" aria-disabled="false" href="https://github.com/cardanorealfi/charter-documents/blob/main/mission-statement.md">
-                Mission Statement <span class="badge badge-light">🎯</span>
-            </a>
-            <a role="button" class="btn btn-primary" aria-disabled="false" href="https://github.com/cardanorealfi/charter-documents/blob/main/mission-statement.md">
-                CFRC rules <span class="px-4 badge badge-light">📏</span>
-            </a>
-        </div>
-        
-        
-        
-</section>
+    <!-- Resources -->
+
+    <section>
+        <div class="container p-5">
+            <h2 class="display-2 fw-bold text-center">Resources</h2>
+            <div class="d-flex flex-column align-items-center justify-content-center embed-responsive embed-responsive-4by3 my-5">
+                <!-- <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/hVhZgSYpUQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
+            <div class="d-flex justify-content-around resource-links my-5">
+                <a role="button" class="btn btn-primary" aria-disabled="false" href="https://github.com/cardanorealfi/charter-documents/blob/main/mission-statement.md">
+                    Mission Statement <span class="badge badge-light">🎯</span>
+                </a>
+                <a role="button" class="btn btn-primary" aria-disabled="false" href="https://github.com/cardanorealfi/charter-documents/blob/main/mission-statement.md">
+                    CFRC rules <span class="px-4 badge badge-light">📏</span>
+                </a>
+            </div>
+        </div>     
+    </section>
     
     <!-- Footer -->
     <footer class="container p-4 hidden my-5">
