@@ -192,18 +192,13 @@ header {
 
 .hero {
     padding: 100px 0;
-    background-image: url('../assets/Earth.png');
-    background-size: 100vw;
-    background-color: var(--color-light-md);
-    background-repeat: no-repeat;
-    background-position: center;
-    color: var(--color-light);
+    background: no-repeat center/100% url('../assets/Earth.png') var(--color-light-md);
     position:relative;
     top: 50px;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
 }
 
 .hero::before {
@@ -215,7 +210,6 @@ header {
     left: 0;
     background-image: linear-gradient(to bottom right,#fff,#fff);
     opacity: 0.4; 
-
     z-index: 1;
 }
 
@@ -237,25 +231,14 @@ header {
     background-color: var(--color-light-md);
 }
 
-.about__heading {
-    color: var(--color-highlight);
-}
-
 .about__text {
     font-family: var(--secondary-font);
 }
-
-
 
 /*********************** Members ************************/
 
 .members {
     background-color: var(--color-darkest);
-    /* padding: 1em 0; */
-}
-
-.members__heading {
-    color: var(--color-highlight);
 }
 
 .members__section {
@@ -269,10 +252,6 @@ header {
 
 .member__img {
     max-width: 35vw;
-}
-
-.member__img--iamx {
-    max-width: 20vw;
 }
 
 /*********************** Resources ************************/
@@ -292,22 +271,10 @@ header {
     height: 100%;
 }
 
-.resource-links {
-    margin: 0 auto;
-}
-
-
-
-
 /*********************** Footer ************************/
 
 footer {
     background-color: var(--color-darker);
-}
-
-.footer-heading {
-    display: block;
-    color: var(--color-light);
 }
 
 .logo__container--footer {
@@ -412,10 +379,6 @@ footer {
       margin: 0;
     }
   
-    /* .primary-content {
-      width: 62%;
-    } */
-  
     .members__section {
         display: grid;
         grid-template-columns: repeat(4, 3fr);
@@ -423,7 +386,6 @@ footer {
         justify-items: center;
         align-items: center;
     }
-    .member__item {}
 
     .member__img {
         max-width: 15vw;
@@ -439,14 +401,9 @@ footer {
         justify-items: stretch;
         align-items: center;
     }
-    .member__item {}
 
     .member__img {
         max-width: 10vw;
-    }
-
-    .member__img--iamx {
-        max-width: 8vw;
     }
 }
 
