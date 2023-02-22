@@ -37,11 +37,32 @@ section {
     padding: 4em 0;
 }
 
+.heading {
+    color: var(--color-highlight);
+    font-size: var(--font-xl);
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+}
+
+.list {
+    margin: 0 1rem;
+    padding: 1rem 0;
+    font-family: var(--secondary-font);
+}
+
+.item {
+    margin-top: 0.5rem;
+}
+
+.item__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-darkest);
 }
 
 .btn {
@@ -61,23 +82,23 @@ section {
     opacity: 0.75;
 }
 
-/* body {
-    background-color: lightgrey !important;
-} */
-
 /*********************** Navigation ************************/
 
 header {
-    display: flex;
     background: var(--color-light);
     padding: 0.5em 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
 .nav {
     visibility: hidden;
     height: 0;
-    position: absolute;
+    position: relative;
 }
 
 .nav--visible {
@@ -87,13 +108,9 @@ header {
 }
 
 .nav__list {
-    margin: 0;
+    margin: 0 auto;
     padding: 1rem 0;
     list-style: none;
-}
-
-.nav__list--primary {
-    margin: 0 auto;
 }
 
 .nav__item {
@@ -171,24 +188,6 @@ header {
     height: 70px;
 }
 
-/* #home, #about-us, #members, #contact-us {
-    padding: 4em 0;
-}
-
-.navbar {
-    background-color:rgba(255, 255, 255, 0.4);
-    padding: 0 !important;
-    z-index: 2 !important;
-}
-
-.navbar-brand {
-    padding: 0 !important;
-}
-
-.nav-logo {
-    width: 2rem;
-} */
-
 /*********************** Hero ************************/
 
 .hero {
@@ -200,6 +199,11 @@ header {
     background-position: center;
     color: var(--color-light);
     position:relative;
+    top: 50px;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   overflow: auto;
 }
 
 .hero::before {
@@ -215,30 +219,17 @@ header {
     z-index: 1;
 }
 
-.logo--hero {
-    max-width: 30vw;
-    position: relative;
-    z-index: 2;
-}
-.col--hero {
+.logo__container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero__title {
-    font-size: var(--font-xl);
-    color: black;
+.logo--hero {
+    max-width: 30vw;
+    position: relative;
+    z-index: 2;
 }
-
-.hero__title--highlight {
-    color: var(--color-light);
-}
-
-.hero__text {
-    font-family: var(--secondary-font);
-}
-
 
 /*********************** About ************************/
 
@@ -254,21 +245,13 @@ header {
     font-family: var(--secondary-font);
 }
 
-.about__list {
-    margin: 0 1rem;
-    padding: 1rem 0;
-    font-family: var(--secondary-font);
-}
 
-.about__item {
-    margin-top: 0.5rem;
-}
 
 /*********************** Members ************************/
 
 .members {
     background-color: var(--color-darkest);
-    padding: 1em 0;
+    /* padding: 1em 0; */
 }
 
 .members__heading {
@@ -280,7 +263,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 3fr);
     gap: 40px;
-    justify-items: start;
+    justify-items: center;
     align-items: center;
 }
 
@@ -292,8 +275,44 @@ header {
     max-width: 20vw;
 }
 
+/*********************** Resources ************************/
+
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .resource-links {
     margin: 0 auto;
+}
+
+
+
+
+/*********************** Footer ************************/
+
+footer {
+    background-color: var(--color-darker);
+}
+
+.footer-heading {
+    display: block;
+    color: var(--color-light);
+}
+
+.logo__container--footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 .hidden {
@@ -301,6 +320,10 @@ header {
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .show {
@@ -311,10 +334,13 @@ header {
 }
 
 .logo:nth-child(2){
-    transition-delay: 400ms;
+    transition-delay: 600ms;
 }
 .logo:nth-child(3){
-    transition-delay: 500ms;
+    transition-delay: 700ms;
+}
+.logo:nth-child(4){
+    transition-delay: 800ms;
 }
 
 /******** Media Queries **********/
@@ -323,10 +349,6 @@ header {
     .hidden {
         transition: none;
     }
-}
-
-@media (min-width: 350px){
-   
 }
 
 @media (min-width: 600px) {
@@ -386,7 +408,7 @@ header {
   
     .hero__img {
       width: 32%;
-      align-self: flex-start;
+      align-self: center;
       margin: 0;
     }
   
