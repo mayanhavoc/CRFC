@@ -10,11 +10,11 @@
 </head>
 <body>
     <header>
-        <div class="container nav__container">
+        <div class="container row">
             <button class="nav-toggle" aria-label="open navigation">
                 <span class="hamburger"></span>
             </button>
-            <a href="#">
+            <a href="#home">
                 <img 
                     src="./assets/CRFC-logo.png" alt="CRFC-logo-transparent-bg"
                     class="logo" 
@@ -24,7 +24,8 @@
                 <ul class="nav__list nav__list--primary">
                     <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
                     <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Members</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#members">Members</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#resources">Resources</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,11 +33,11 @@
 
     <!-- Home -->
 
-    <section class="hero">
-        <div class="container row">
-            <div class="col col--hero">
+    <section class="hero" id="home">
+        <span id="home" class="anchor"></span>
+        <div class="container">
+            <div class="logo__container">
                     <img src="./assets/CRFC-logo.png" alt="CRFC-logo" class="logo--hero">
-                </div>
             </div>
         </div>
     </section>
@@ -44,98 +45,162 @@
     <!-- About Us -->
 
     <section class="about" id="about">
+        <span id="about" class="anchor"></span>
         <div class="container row">
             <div class="col">
-                <h2 class="about__heading">About Us</h2>
+                <h2 class="heading">About Us</h2>
                 <p class="about__text">We are an independent collective of RealFi projects that create value and trust by connecting real world assets and processes to transactions and tokens on the Cardano blockchain.</p>
                 <p class="about__text">The CRFC is an open and permissionless organization that models and advances decentralization principles.</p>
                 <p class="about__text">We hold bi-weekly planning meetings and have organised the following working groups:</p>
-                <ul class="about__list">
-                    <li class="about__item">Identity & Trust</li>
-                    <li class="about__item">Fiat Conversion</li>
-                    <li class="about__item">Document Verification</li>
-                    <li class="about__item">Governance & Membership</li>
-                    <li class="about__item">Outreach & Marketing</li>
+                <ul class="list">
+                    <li class="item">Identity & Trust</li>
+                    <li class="item">Fiat Conversion</li>
+                    <li class="item">Document Verification</li>
+                    <li class="item">Governance & Membership</li>
+                    <li class="item">Outreach & Marketing</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- Members -->
-    <section class="members">
+    <section class="members" id="members">
         <div class="container">
-            <h2 class="members__heading">Members</h2>
-            <div class="members__section">
+            <h2 class="heading">Members</h2>
+            <section class="members__section">
                 <div class="member__item">
-                    <img class="member__img" src="./assets/aid_tech-logo.png" alt="">
+                    <a href="">
+                        <img class="member__img" src="./assets/landano-logo-square.png" alt="">
+                    </a>
                 </div>
                 <div class="member__item">
-                    <img class="member__img" src="./assets/cardashift-logo.png" alt="">
+                    <a href="">
+                        <img class="member__img" src="./assets/newm-logo.png" alt="">
+                    </a>
                 </div>
                 <div class="member__item">
-                    <img class="member__img" src="./assets/charlie3-logo.png" alt="">
+                    <a href="">
+                        <img class="member__img" src="./assets/Commonlands-Logo-Large-Transparent.png" alt="">
+                    </a>
                 </div>
                 <div class="member__item">
-                    <img class="member__img--iamx" src="./assets/iamx.id-logo.png" alt="">
+                    <a href="">
+                        <img class="member__img" src="./assets/logo-395241 .png" alt="">
+                    </a>
                 </div>
                 <div class="member__item">
-                    <img class="member__img" src="./assets/impact-scope-logo.png" alt="">
+                    <a href="">
+                        <img class="member__img" src="https://gokey.network/wp-content/uploads/thegem-logos/logo_0393d270c898b217dacee09ca62411b4_2x.png" alt="">
+                    </a>
                 </div>
                 <div class="member__item">
-                    <img class="member__img" src="./assets/landano-logo.png" alt="">
+                    <a href="">
+                        <img class="member__img" src="https://real-fi.org/assets/member-logos/Orcfax-logo.png" alt="">
+                    </a>
                 </div>
                 <div class="member__item">
-                    <img class="member__img" src="./assets/lguf-logo.png" alt="">
+                    <a href="">
+                        <img class="member__img--iamx" src="./assets/IAMX_Logo_OYI.png" alt="">
+                    </a>
                 </div>
                 <div class="member__item">
-                    <img class="member__img" src="./assets/newm-logo.png" alt="">
+                    <a href="">
+                        <img class="member__img" src="./assets/logo_reitcircles_32x32.png" alt="">
+                    </a>
                 </div>
                 <div class="member__item">
-                    <img class="member__img" src="./assets/Commonlands-Logo-Large-Transparent.png" alt="">
+                    <a href="">
+                        <img class="member__img" src="./assets/TerraFirmaLogo.jpeg" alt="">
+                    </a>
                 </div>
-            </div>
+                <div class="member__item">
+                    <a href="">
+                        <img class="member__img" src="./assets/Algae-Token-Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="member__item">
+                    <a href="">
+                        <img class="member__img" src="./assets/Oceidon-SMART-Score-Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="member__item">
+                    <a href="">
+                        <img class="member__img" src="./assets/LGUF-Logos.png" alt="">
+                    </a>
+                </div>
+                <div class="member__item">
+                    <a href="">
+                        <img class="member__img" src="./assets/et-logo1.png" alt="">
+                    </a>
+                </div>
+                <div class="member__item">
+                    <a href="">
+                        <img class="member__img" src="./assets/Graph-Fuse-circle.png" alt="">
+                    </a>
+                </div>
+                <div class="member__item">
+                    <a href="">
+                        <img class="member__img" src="./assets/impact-scope-logo.png" alt="">
+                    </a>
+                </div>
+            </section>
         </div>
     </section>
 
 
     <!-- Resources -->
 
-    <section>
-        <div class="container p-5">
-            <h2 class="display-2 fw-bold text-center">Resources</h2>
-            <div class="d-flex flex-column align-items-center justify-content-center embed-responsive embed-responsive-4by3 my-5">
-                <!-- <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/hVhZgSYpUQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <section id="resources">
+        <div class="container">
+            <h2 class="heading">Resources</h2>
+            <div class="iframe-container">
+                <iframe 
+                width="560" 
+                height="315" src="https://www.youtube.com/embed/hVhZgSYpUQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+                loading="lazy"
+                >
+            </iframe>
             </div>
-            <div class="d-flex justify-content-around resource-links my-5">
-                <a role="button" class="btn btn-primary" aria-disabled="false" href="https://github.com/cardanorealfi/charter-documents/blob/main/mission-statement.md">
-                    Mission Statement <span class="badge badge-light">🎯</span>
-                </a>
-                <a role="button" class="btn btn-primary" aria-disabled="false" href="https://github.com/cardanorealfi/charter-documents/blob/main/mission-statement.md">
-                    CFRC rules <span class="px-4 badge badge-light">📏</span>
-                </a>
-            </div>
+            <ul class="list">
+                <li class="item">
+                    <a href="https://github.com/cardanorealfi/charter-documents/blob/main/mission-statement.md" class="item__link">
+                        Mission statement <span>🎯</span> 
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://github.com/cardanorealfi/charter-documents/blob/main/mission-statement.md" class="item__link">
+                        CFRC rules 
+                        <span>📏</span>
+                    </a>
+                </li>
+            </ul>
         </div>     
     </section>
     
     <!-- Footer -->
-    <footer class="container p-4 hidden my-5">
-      <div class="d-flex align-items-center overflow-scroll justify-lg logos">
-          <div class="hidden logo">
-              <a href="https://www.linkedin.com/company/cardano-realfi-consortium/" target="_blank">
-                  <img class="mx-3" src="./assets/LinkedIn-Logos/LI-Logo.png" class="px-1" width="150">
-              </a>
-          </div>
-          <div class="hidden logo">
-              <a href="https://twitter.com/realficardano" target="_blank">
-                  <img class="mx-3" src="./assets/2021-Twitter-logo-blue.png" class="px-1" width="50">
-              </a>
-          </div>
-          <div class="hidden logo">
-              <a href="https://discord.gg/mzZbwdFgXp" target="_blank">
-                  <img class="mx-3 px-1" src="./assets/discord-logo-blue.png" width="150">
-              </a>
-          </div>
-      </div>
+    <footer>
+        <section class="container row">
+            <h2 class="footer-heading hidden logo">Cardano RealFi Consortium</h2>
+            <div class="logo__container--footer">
+                <div>
+                    <a  class="hidden logo" href="https://www.linkedin.com/company/cardano-realfi-consortium/" target="_blank">
+                        <img src="./assets/LinkedIn-Logos/LI-Logo.png" width="150">
+                    </a>
+                </div>
+                <div  >
+                    <a class="hidden logo" href="https://twitter.com/realficardano" target="_blank">
+                        <img src="./assets/2021-Twitter-logo-blue.png" width="50">
+                    </a>
+                </div>
+                <div>
+                    <a  class="hidden logo" href="https://discord.gg/mzZbwdFgXp" target="_blank">
+                        <img src="./assets/discord-logo-blue.png" width="150">
+                    </a>
+                </div>
+            </div>
+            
+        </section>
     </footer>
       
       
