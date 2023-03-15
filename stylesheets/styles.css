@@ -290,6 +290,12 @@ footer {
     padding-bottom: 3em;
 }
 
+.list-footer {
+    margin: 0 1rem;
+    padding: 4rem 0;
+    font-family: var(--secondary-font);
+}
+
 .logo__container--footer {
     display: flex;
     justify-content: space-between;
