@@ -9,10 +9,10 @@
     --font-xxs: 1em;
     --color-darkest: #2e323f;
     --color-darker: #3b4050;
-    --color-dark: #6f737f;
+    --color-lightgrey: #D3D3D3;
     --color-light-md: #efefef;
     --color-light: #ffffff;
-    --color-highlight: #a59678;
+    --color-highlight: #000;
 }
 
 *,
