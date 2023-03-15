@@ -286,7 +286,8 @@ header {
 /*********************** Footer ************************/
 
 footer {
-    background-color: var(--color-darker);
+    height: auto;
+    padding-bottom: 3em;
 }
 
 .logo__container--footer {
