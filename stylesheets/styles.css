@@ -235,7 +235,7 @@ header {
 /*********************** About ************************/
 
 .about {
-    background-color: var(--color-light-md);
+    margin: 0 2em;
 }
 
 .about__text {
