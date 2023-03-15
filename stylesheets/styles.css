@@ -264,6 +264,10 @@ header {
     padding-top: 0;
 }
 
+.heading-resources {
+    padding-bottom: 2em;
+}
+
 .iframe-container {
     overflow: hidden;
     padding-top: 56.25%;
