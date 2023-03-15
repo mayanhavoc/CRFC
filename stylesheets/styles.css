@@ -43,6 +43,10 @@ section {
     text-align: center;
 }
 
+.sub-heading {
+    font-size: var(--font-xs);
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
