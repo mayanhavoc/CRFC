@@ -244,10 +244,6 @@ header {
 
 /*********************** Members ************************/
 
-.members {
-    background-color: var(--color-darkest);
-}
-
 .members__section {
     margin: 2rem 0;
     display: grid;
