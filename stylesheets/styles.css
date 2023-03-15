@@ -1,13 +1,12 @@
 :root {
     --primary-font: Oswald, sans-serif;
     --secondary-font: Montserrat, sans-serif;
-    --font-xxl: 90px;
-    --font-xl: 36px;
-    --font-lg: 30px;
-    --font-md: 24px;
-    --font-sm: 21px;
-    --font-xs: 18px;
-    --font-xxs: 16px;
+    --font-xl: 4.5em;
+    --font-lg: 3.75em;
+    --font-md: 3em;
+    --font-sm: 1.5em;
+    --font-xs: 1.125em;
+    --font-xxs: 1em;
     --color-darkest: #2e323f;
     --color-darker: #3b4050;
     --color-dark: #6f737f;
