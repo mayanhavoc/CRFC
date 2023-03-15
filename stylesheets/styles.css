@@ -40,6 +40,7 @@ section {
 .heading {
     color: var(--color-highlight);
     font-size: var(--font-xl);
+    text-align: center;
 }
 
 .container {
