@@ -196,14 +196,15 @@ header {
 /*********************** Hero ************************/
 
 .hero {
-    padding: 100px 0;
+    /* padding: 100px 0; */
     background: no-repeat center/100% url('../assets/Earth.png') var(--color-light-md);
     position:relative;
-    top: 50px;
+    /* top: 50px;
     left: 0;
     bottom: 0;
-    right: 0;
+    right: 0; */
     overflow: auto;
+    min-height: 100vh;
 }
 
 .hero::before {
@@ -222,6 +223,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .logo--hero {
